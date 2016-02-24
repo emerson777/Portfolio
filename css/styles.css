@@ -71,7 +71,7 @@ h2:before {
 
 header { 
   background: linear-gradient(0deg, #f7f5f0, transparent),
-              url('images/bgc.jpg') no-repeat top center;
+              url('../images/bgc.jpg') no-repeat top center;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px; 
@@ -98,9 +98,7 @@ header .profile-image {
   border: 3px solid #fff;
   box-shadow: 0 0 30px rgba(0,0,0,1);
 }
-header .profile-image:hover {
-  transform: scale(1.2);
-}
+
 .tag {
   background-color: #fff;
   color: black;
@@ -117,16 +115,22 @@ header .profile-image:hover {
 }
 .card {
   margin: 30px;
-  padding: 20px 40px 40px;
-  max-width: 500px;
+  padding: 20px 5px 40px 11px;
+  width: 97%; 
   text-align: left;
   background: #fff;
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
   transition: all .5s;
+  margin:  0 auto 20px auto;
 }
+
 .card:hover {
-  border-color: #ff99ff;
+  border-color: #0E313D;
+}
+
+.card p {
+  width: 90%;
 }
 
 ul.skills {
@@ -203,7 +207,6 @@ WORK
   flex-wrap: wrap;
   max-width: 1200px;
   -ms-flex-pack: distribute;
-  justify-content: center;
   margin: 0 auto;
   padding-top: 100px;
   }
@@ -213,12 +216,26 @@ WORK
    font-family: 'Poppins', sans-serif; 
  }
   
+  .gallery {
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+      margin: 0 auto;
+      width: 80%;
+
+  }
+  .gallery li {
+   align-self: center;
+  }
+
+
 
   .img {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   border-radius: 20%;
   box-shadow: 0 0 30px rgba(0,0,0,.5);
+  margin: 50px auto 0 auto;
   }
 
   .icon {
@@ -281,9 +298,32 @@ WORK
     justify-content: space-around;
 
   }
+
+
+
   .icon {
     margin-bottom: 200px;
     margin-top: 40px;
+  }
+
+  .card {
+   max-width: 500px;
+   padding: 20px 40px 40px;
+  }
+
+
+
+  /*WORK*/
+
+  .img {
+    height: 300px;
+    width: 300px;
+    margin-right: 34px;
+    margin: 40px auto 0 auto ;
+  }
+  .gallery {
+    margin: 0 auto;
+    width: 100%;
   }
 
 }
